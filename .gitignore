@@ -1,0 +1,45 @@
+# Build output
+bin/
+obj/
+
+# User-specific files
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temp & cache
+*.tmp
+*.temp
+*.bak
+*.swp
+*.vs
+node_modules/
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+docker-compose.*.local.yml
+
+# Environment files
+.env
+.env.*
+!.env.template
+
+# Infra artifacts
+*.pem
+*.key
+*.crt
+*.csr
+secrets/
