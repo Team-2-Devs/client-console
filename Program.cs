@@ -274,14 +274,27 @@ class Program
             {
                 query = """
                 subscription {
-                    onAnalysisCompleted {
-                        success
-                        recognitionPayload {
-                            correlationId
-                            objectKey
-                            success
+                onAnalysisCompleted {
+                    success
+                    recognitionPayload {
+                        provider {
+                            name
+                            apiVersion
+                            featureset
+                            maxResults
+                        }
+                        aggregate {
+                            brand
+                            type
+                            model
+                            confidence
+                            isConfident
+                            typeConfidence
+                            typeSource
+                            name
                         }
                     }
+                }
                 }
                 """
             }
